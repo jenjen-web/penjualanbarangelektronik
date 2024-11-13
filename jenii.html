@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Alat Elektronik</title>
+    <link rel="stylesheet" href="jeniiii.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penjualan Alat Elektronik</h1>
+        
+        <div class="product">
+            <h2>Pilih Produk</h2>
+            <label for="product">Produk:</label>
+            <select id="product">
+                <option value="tv" data-price="3000000">TV 40" - Rp 3.000.000</option>
+                <option value="laptop" data-price="7000000">Laptop - Rp 7.000.000</option>
+                <option value="smartphone" data-price="5000000">Smartphone - Rp 5.000.000</option>
+                <option value="ac" data-price="4500000">AC - Rp 4.500.000</option>
+            </select>
+        </div>
+        
+        <div class="quantity">
+            <h2>Jumlah Pembelian</h2>
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+        
+        <div class="total">
+            <h2>Total Harga</h2>
+            <p id="total-price">Rp 0</p>
+        </div>
+        
+        <button onclick="calculateTotal()">Hitung Total</button>
+    </div>
+
+    <script src="jeni.javascript.js"></script>
+</body>
+</html>
+
